@@ -18,4 +18,4 @@ We expect all community members to:
 
 The following behaviors are considered unacceptable within our community:
 
-- **Harassment**: This includes offensive comments related to gender, sexual orientation, disability, ethnicity, religion, or any other characteristic. It also includes unwelcome sexual attention, deliberate intimidation, stalking, and inappropriate physical contact
+- **Harassment**: This includes offensive comments related to gender, sexual orientation, disability, ethnicity, religion, or any other characteristic. It also includes unwelcome sexual attention, deliberate intimidation, stalking, and inappropriate physical contact.
