@@ -55,24 +55,12 @@ Before you begin, ensure you have the following installed on your machine:
    npm install
    ```
 
-   or
-
-   ```bash
-   yarn install
-   ```
-
 ## Usage
 
 To start the development server, run:
 
 ```bash
-npm start
-```
-
-or
-
-```bash
-yarn start
+npm run dev
 ```
 
 This will start the application on `http://localhost:3000`. Open your browser and navigate to this URL to see the application in action.
@@ -81,12 +69,6 @@ To build the project for production, run:
 
 ```bash
 npm run build
-```
-
-or
-
-```bash
-yarn build
 ```
 
 The build artifacts will be stored in the `build/` directory.
