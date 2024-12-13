@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Section from "./section";
 
 export default function Docs() {
   return (
@@ -123,6 +124,8 @@ export default function Docs() {
             </div>
           </div>
         </div>
+
+        <Section />
       </main>
     </div>
   );
