@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { IoDocuments } from "react-icons/io5";
+
 import Image from "next/image";
 import Section from "./section";
 
@@ -54,17 +56,8 @@ export default function Docs() {
       {/* Main Content */}
       <main className="flex-1 container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Hexagonal Icon */}
-          <div className="mb-8">
-            <svg
-              className="w-24 h-24 mx-auto text-purple-600"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M17,3H7A4,4 0 0,0 3,7V17A4,4 0 0,0 7,21H17A4,4 0 0,0 21,17V7A4,4 0 0,0 17,3M17,19H7A2,2 0 0,1 5,17V7A2,2 0 0,1 7,5H17A2,2 0 0,1 19,7V17A2,2 0 0,1 17,19M12,6L7,11H10V18H14V11H17L12,6Z"
-              />
-            </svg>
+          <div className="mb-8 flex justify-center items-center">
+            <IoDocuments className="text-lg bg-gray-200 border size-20 border-gray-400 p-4 rounded-full" />
           </div>
 
           {/* Main Heading */}
