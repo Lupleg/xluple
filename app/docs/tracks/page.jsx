@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ChevronDown, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export default function Tranks() {
+export default function Tracks() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Top Navigation */}
@@ -16,31 +16,31 @@ export default function Tranks() {
               <Home className="h-5 w-5" />
             </Link>
             <Link
-              href="/using-exercism"
+              href="/docs/using"
               className="text-purple-600 border-b-2 border-purple-600 h-full flex items-center flex-shrink-0"
             >
               Using Lupleg
             </Link>
             <Link
-              href="/building-exercism"
+              href="/docs/building"
               className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
               Building Lupleg
             </Link>
             <Link
-              href="/mentoring"
+              href="/docs/mentoring"
               className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
               Mentoring
             </Link>
             <Link
-              href="/community"
+              href="/docs/community"
               className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
               Community
             </Link>
             <Link
-              href="/track-specific"
+              href="/docs/tracks"
               className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
               Track-specific
