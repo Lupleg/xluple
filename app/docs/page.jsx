@@ -20,31 +20,31 @@ export default function Docs() {
               <Home className="h-5 w-5" />
             </Link>
             <Link
-              href="/using-exercism"
+              href="/docs/using"
               className="text-purple-600 hover:text-purple-700 h-full flex items-center flex-shrink-0"
             >
               Using Lupleg
             </Link>
             <Link
-              href="/building-exercism"
+              href="/docs/building"
               className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
               Building Lupleg
             </Link>
             <Link
-              href="/mentoring"
+              href="/docs/mentoring"
               className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
               Mentoring
             </Link>
             <Link
-              href="/community"
+              href="/docs/community"
               className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
               Community
             </Link>
             <Link
-              href="/track-specific"
+              href="/docs//tracks"
               className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
               Track-specific
@@ -116,7 +116,6 @@ export default function Docs() {
               />
             </div>
           </div>
-          
         </div>
 
         <Section />
