@@ -19,13 +19,13 @@ export default function Using() {
               href="/using-exercism"
               className="text-purple-600 border-b-2 border-purple-600 h-full flex items-center flex-shrink-0"
             >
-              Using Exercism
+              Using Lupleg
             </Link>
             <Link
               href="/building-exercism"
               className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
-              Building Exercism
+              Building Lupleg
             </Link>
             <Link
               href="/mentoring"
@@ -55,7 +55,7 @@ export default function Using() {
         {/* Sidebar */}
         <aside className="w-64 border-r p-4 hidden md:block">
           <nav className="space-y-4">
-            <div className="font-semibold text-purple-600">Using Exercism</div>
+            <div className="font-semibold text-purple-600">Using Lupleg</div>
             <div className="space-y-2">
               <Button variant="ghost" className="w-full justify-between">
                 Settings and options
@@ -98,11 +98,11 @@ export default function Using() {
                 Frequently asked questions
               </Link>
               <Button variant="ghost" className="w-full justify-between">
-                Licenses used on Exercism
+                Licenses used on Lupleg
                 <ChevronDown className="h-4 w-4" />
               </Button>
               <Button variant="ghost" className="w-full justify-between">
-                The Various editions of Exercism
+                The Various editions of Lupleg
                 <ChevronDown className="h-4 w-4" />
               </Button>
               <Button variant="ghost" className="w-full justify-between">
@@ -116,10 +116,10 @@ export default function Using() {
         <main className="flex-1 p-8">
           <div className="max-w-4xl">
             <h1 className="text-4xl font-bold text-purple-900 mb-4">
-              Using Exercism
+              Using Lupleg
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Learn how to make the most of our experience on Exercism
+              Learn how to make the most of our experience on Lupleg
             </p>
 
             {/* Decorative Wave */}
@@ -136,7 +136,7 @@ export default function Using() {
 
             <p className="text-gray-700 mb-8">
               These documents describe how to make the most of your experience
-              on Exercism.
+              on Lupleg.
             </p>
 
             <ul className="space-y-4">
