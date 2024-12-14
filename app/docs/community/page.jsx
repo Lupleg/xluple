@@ -17,7 +17,7 @@ export default function Community() {
             </Link>
             <Link
               href="/docs/using"
-              className="text-purple-600 border-b-2 border-purple-600 h-full flex items-center flex-shrink-0"
+              className=" text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
               Using Lupleg
             </Link>
@@ -35,7 +35,7 @@ export default function Community() {
             </Link>
             <Link
               href="/docs/community"
-              className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
+              className=" text-[#2D1537] border-b-2 border-[#2D1537] hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
               Community
             </Link>
