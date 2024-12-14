@@ -80,7 +80,6 @@ export default function Community() {
               >
                 Administrators
               </Link>
-
               <Link
                 href="/faq"
                 className="flex items-center px-4 py-2 text-gray-600 hover:text-gray-900"
