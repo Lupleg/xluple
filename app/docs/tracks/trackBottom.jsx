@@ -1,7 +1,20 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function TrackBottom() {
+  const router = useRouter();
+
+  const handleSignUp = () => {
+    router.push("https://mentor.lupleg.org");
+  };
+
+  const handleExplore = () => {
+    router.push("/programs");
+  };
+
   return (
     <div className="min-h-screen text-white">
       {/* Header Section */}
@@ -19,12 +32,14 @@ export default function TrackBottom() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
+              onClick={handleSignUp}
               size="lg"
               className="bg-[#2D1537] hover:bg-[#2D1537] text-white"
             >
               Sign up for free
             </Button>
             <Button
+              onClick={handleExplore}
               size="lg"
               className="text-[#2D1537] hover:text-[#2D1537] bg-white hover:bg-white border border-[#2D1537]"
             >
