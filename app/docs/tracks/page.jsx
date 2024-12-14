@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ChevronDown, Home } from "lucide-react";
 import Section from "./section";
 import TrackBottom from "./trackBottom";
+import { IoHome } from "react-icons/io5";
 
 export default function Tracks() {
   return (
@@ -14,7 +15,7 @@ export default function Tracks() {
               href="/docs"
               className="text-gray-600 hover:text-gray-900 flex-shrink-0"
             >
-              <Home className="h-5 w-5" />
+              <IoHome className="h-5 w-5" />
             </Link>
             <Link
               href="/docs/using"

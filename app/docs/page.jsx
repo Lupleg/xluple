@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { IoDocuments } from "react-icons/io5";
+import { IoDocuments, IoHome } from "react-icons/io5";
 
 import Image from "next/image";
 import Section from "./section";
@@ -15,13 +15,14 @@ export default function Docs() {
           <div className="flex items-center h-16 space-x-8 whitespace-nowrap">
             <Link
               href="/docs"
-              className="text-purple-600 hover:text-purple-700 flex-shrink-0"
+              className="text-[#2D1537] hover:text-[#2D1537] flex-shrink-0"
             >
-              <Home className="h-5 w-5" />
+              {/* <Home className="h-5 w-5" /> */}
+              <IoHome className="h-5 w-5" />
             </Link>
             <Link
               href="/docs/using"
-              className="text-purple-600 hover:text-purple-700 h-full flex items-center flex-shrink-0"
+              className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
               Using Lupleg
             </Link>
