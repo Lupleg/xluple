@@ -43,7 +43,7 @@ export default function Community() {
               href="/docs/tracks"
               className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
-              Track-specific
+              Track Specific
             </Link>
           </div>
         </div>
