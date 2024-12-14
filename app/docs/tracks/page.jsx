@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ChevronDown, Home } from "lucide-react";
 import Section from "./section";
+import TrackBottom from "./trackBottom";
 
 export default function Tracks() {
   return (
@@ -49,6 +50,7 @@ export default function Tracks() {
         </div>
       </nav>
       <Section />
+      <TrackBottom />
     </div>
   );
 }

@@ -38,7 +38,7 @@ export default function Section() {
     <div className="container mx-auto px-4 py-12">
       <div className="text-center my-8">
         <h1 className="text-4xl font-bold text-[#2D1537] mb-4">
-          Track-specific docs
+          Track Specific Docs
         </h1>
         <p className="text-xl text-[#2D1537]">
           Explore the docs of tracks you're learning, mentoring or helping to
