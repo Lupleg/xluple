@@ -56,31 +56,31 @@ export default function Community() {
           <nav className="space-y-4">
             <div className="space-y-2">
               <Link
-                href="/docs/community"
+                href="/contact"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Community
               </Link>
               <Link
-                href="/docs/community/contributors"
+                href="/report-abuse"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Contributors
               </Link>
               <Link
-                href="/docs/community/maintainers"
+                href="/getting-started"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Maintainers
               </Link>
               <Link
-                href="/docs/community/administrators"
+                href="/faq"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Administrators
               </Link>
               <Link
-                href="/docs/community/gmember"
+                href="/faq"
                 className="flex items-center px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Good Member
@@ -113,7 +113,7 @@ export default function Community() {
               </svg>
             </div>
 
-            <p id="community" className="text-gray-700 mb-8">
+            <p className="text-gray-700 mb-8">
               This section covers various things to know about the Lupleg
               community, looking at how to be a good community member, and
               understanding the roles different people fulfill.
