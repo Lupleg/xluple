@@ -57,29 +57,14 @@ export default function GettingStarted() {
             <div className="font-semibold text-purple-600">Using Lupleg</div>
             <div className="space-y-2">
               <Link
-                href="/getting-started"
+                href="/docs/using/getting-started"
                 className="block px-4 py-2 text-[#2D1537] hover:text-gray-900"
               >
                 Getting Started
               </Link>
-              <Link
-                href="/docs/settings"
-                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
-              >
-                Settings and Options
-              </Link>
-              <Link
-                href="/docs/feedback"
-                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
-              >
-                Getting Feedback
-              </Link>
-              <Link
-                href="/docs/exercises"
-                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
-              >
-                Solving Exercises
-              </Link>
+              
+              
+              
               <Link
                 href="/contact"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
@@ -87,7 +72,7 @@ export default function GettingStarted() {
                 Contact Us
               </Link>
               <Link
-                href="/report-abuse"
+                href="/docs/using/report-abuse"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Report Abuse

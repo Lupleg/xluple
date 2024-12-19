@@ -28,7 +28,7 @@ export default function Community() {
               Building Lupleg
             </Link>
             <Link
-              href="/docs/mentoring"
+              href="/docs/mentoring/mentor"
               className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
             >
               Mentoring

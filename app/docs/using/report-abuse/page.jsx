@@ -56,18 +56,18 @@ export default function ReportAbuse() {
           <nav className="space-y-4">
             <div className="font-semibold text-purple-600">Using Lupleg</div>
             <div className="space-y-2">
-              <Button variant="ghost" className="w-full justify-between">
-                Settings and options
-                <ChevronDown className="h-4 w-4" />
-              </Button>
-              <Button variant="ghost" className="w-full justify-between">
+            <Link
+                href="/docs/feedback"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
                 Getting Feedback
-                <ChevronDown className="h-4 w-4" />
-              </Button>
-              <Button variant="ghost" className="w-full justify-between">
-                Solving exercises
-                <ChevronDown className="h-4 w-4" />
-              </Button>
+              </Link>
+              <Link
+                href="/docs/exercises"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
+                Solving Exercises
+              </Link>
               <Link
                 href="/contact"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
@@ -75,13 +75,13 @@ export default function ReportAbuse() {
                 Contact Us
               </Link>
               <Link
-                href="/report-abuse"
+                href="/docs/using/report-abuse"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Report Abuse
               </Link>
               <Link
-                href="/getting-started"
+                href="/docs/using/getting-started"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Getting Started

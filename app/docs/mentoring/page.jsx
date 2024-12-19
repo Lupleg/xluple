@@ -1,15 +1,16 @@
 import Link from "next/link";
 import { IoHome } from "react-icons/io5";
+import { FaUserTie, FaUsers, FaRegLightbulb, FaLaptop } from "react-icons/fa";
 
 export default function Mentoring() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="min-h-screen flex flex-col bg-white">
       {/* Top Navigation */}
-      <nav className="border-b sticky top-0 bg-white shadow-sm z-10">
+      <nav className="border-b sticky top-0 bg-white shadow-md z-10">
         <div className="container mx-auto px-4 overflow-x-auto">
           <div className="flex items-center h-16 space-x-8 whitespace-nowrap">
             <Link
-              href="/"
+              href="/docs/mentoring"
               className="text-gray-600 hover:text-gray-900 flex-shrink-0"
             >
               <IoHome className="h-5 w-5" />
@@ -33,7 +34,7 @@ export default function Mentoring() {
               Track Specific
             </Link>
             <Link
-              href="/docs/mentoring/mentor"
+              href="/docs/mentoring"
               className="text-[#2D1537] border-b-2 border-[#2D1537] hover:text-gray-900 h-full flex items-center flex-shrink-0 transition duration-200"
             >
               Mentoring
@@ -52,20 +53,20 @@ export default function Mentoring() {
       <main className="flex-1 py-16 px-8">
         <div className="max-w-4xl mx-auto">
           {/* Header Section */}
-          <header className="mb-12">
+          <header className="mb-12 text-center">
             <h1 className="text-5xl font-extrabold text-[#2D1537] mb-4 leading-tight">
               Mentoring with Lupleg
             </h1>
             <p className="text-lg text-gray-600 font-medium">
-              Discover how you can transform lives by sharing your expertise and
-              learn the rewards of mentorship.
+              Transform lives, share expertise, and experience the rewards of
+              mentorship.
             </p>
           </header>
 
           {/* Content Sections */}
           <section className="space-y-16">
             {/* Section 1 */}
-            <div>
+            <div className="text-center">
               <h2 className="text-3xl font-bold text-[#2D1537] mb-4">
                 Introduction to Mentoring
               </h2>
@@ -78,7 +79,16 @@ export default function Mentoring() {
                 and mutual respect.
               </p>
             </div>
-
+            <div className="mb-8">
+              <svg className="text-[#2D1537]" viewBox="0 0 100 20" width="100">
+                <path
+                  d="M0 10 Q25 20 50 10 T100 10"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                />
+              </svg>
+            </div>
             {/* Section 2 */}
             <div>
               <h2 className="text-3xl font-bold text-[#2D1537] mb-4">
@@ -156,26 +166,57 @@ export default function Mentoring() {
               <h2 className="text-3xl font-bold text-[#2D1537] mb-4">
                 Types of Mentoring
               </h2>
-              <ul className="space-y-3 text-gray-700 text-lg leading-relaxed">
-                <li>
-                  <span className="font-semibold">One-on-One Mentoring:</span>{" "}
-                  Individualized, focused guidance.
+              <ul className="space-y-4 text-gray-700 text-lg leading-relaxed">
+                <li className="flex items-center space-x-4">
+                  <FaUserTie className="text-[#2D1537] h-6 w-6" />
+                  <span>
+                    <span className="font-semibold">One-on-One Mentoring:</span>{" "}
+                    Individualized, focused guidance.
+                  </span>
                 </li>
-                <li>
-                  <span className="font-semibold">Group Mentoring:</span>{" "}
-                  Collaborative sessions with multiple mentees.
+                <li className="flex items-center space-x-4">
+                  <FaUsers className="text-[#2D1537] h-6 w-6" />
+                  <span>
+                    <span className="font-semibold">Group Mentoring:</span>{" "}
+                    Collaborative sessions with multiple mentees.
+                  </span>
                 </li>
-                <li>
-                  <span className="font-semibold">Reverse Mentoring:</span> Gain
-                  insights from junior professionals.
+                <li className="flex items-center space-x-4">
+                  <FaRegLightbulb className="text-[#2D1537] h-6 w-6" />
+                  <span>
+                    <span className="font-semibold">Reverse Mentoring:</span>{" "}
+                    Gain insights from junior professionals.
+                  </span>
                 </li>
-                <li>
-                  <span className="font-semibold">Virtual Mentoring:</span>{" "}
-                  Connect and guide remotely using digital tools.
+                <li className="flex items-center space-x-4">
+                  <FaLaptop className="text-[#2D1537] h-6 w-6" />
+                  <span>
+                    <span className="font-semibold">Virtual Mentoring:</span>{" "}
+                    Connect and guide remotely using digital tools.
+                  </span>
                 </li>
               </ul>
             </div>
           </section>
+
+          {/* Call to Action */}
+          <div className="mt-16 text-center bg-[#f9f5fc] p-10 rounded-lg shadow-md">
+            <h2 className="text-4xl font-bold text-[#2D1537] mb-4">
+              Ready to Make a Difference?
+            </h2>
+            <p className="text-lg text-gray-700 mb-6">
+              Join our community of mentors and mentees and start creating a
+              lasting impact today.
+            </p>
+            <div className="flex justify-center space-x-4">
+              <Link
+                href="/contact"
+                className="bg-[#2D1537] text-white py-3 px-6 rounded-lg text-lg font-medium shadow hover:bg-[#4b3160] transition duration-200"
+              >
+                Become a Mentor
+              </Link>
+            </div>
+          </div>
         </div>
       </main>
     </div>
