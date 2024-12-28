@@ -49,37 +49,56 @@ export default function Mentoring() {
         </div>
       </nav>
 
-      {/* Main Content */}
-      <main className="flex-1 py-16 px-8">
-        <div className="max-w-4xl mx-auto">
-          {/* Header Section */}
-          <header className="mb-12 text-center">
-            <h1 className="text-5xl font-extrabold text-[#2D1537] mb-4 leading-tight">
-              Mentoring with Lupleg
-            </h1>
-            <p className="text-lg text-gray-600 font-medium">
-              Transform lives, share expertise, and experience the rewards of
-              mentorship.
-            </p>
-          </header>
-
-          {/* Content Sections */}
-          <section className="space-y-16">
-            {/* Section 1 */}
-            <div className="text-center">
-              <h2 className="text-3xl font-bold text-[#2D1537] mb-4">
-                Introduction to Mentoring
-              </h2>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                At <span className="font-semibold text-[#2D1537]">Lupleg</span>,
-                mentoring is the cornerstone of growth and innovation. It
-                bridges the gap between experience and ambition, creating a path
-                for meaningful collaboration. By being a mentor, you empower
-                others while enriching your own journey with fresh perspectives
-                and mutual respect.
-              </p>
+      {/* Sidebar and Main Content */}
+      <div className="flex flex-1">
+        {/* Sidebar */}
+        <aside className="w-64 border-r p-4 hidden md:block">
+          <nav className="space-y-4">
+            <div className="font-semibold text-purple-600">Using Lupleg</div>
+            <div className="space-y-2">
+              <Link
+                href="/contact"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
+                Contact Us
+              </Link>
+              <Link
+                href="/docs/using/report-abuse"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
+                Report Abuse
+              </Link>
+              <Link
+                href="/docs/using/getting-started"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
+                Getting Started
+              </Link>
+              <Link
+                href="/faq"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
+                Frequently asked questions
+              </Link>
             </div>
-            <div className="mb-8">
+          </nav>
+        </aside>
+
+        {/* Main Content */}
+        <main className="flex-1 px-8 py-8 mt-8">
+          <div className="max-w-4xl">
+            {/* Header Section */}
+            <header className="mb-8">
+              <h1 className="text-5xl font-extrabold text-[#2D1537] mb-4 leading-tight">
+                Mentoring with Lupleg
+              </h1>
+              <p className="text-lg text-gray-600 font-medium">
+                Transform lives, share expertise, and experience the rewards of
+                mentorship.
+              </p>
+            </header>
+             {/* Decorative Wave */}
+             <div className="mb-4">
               <svg className="text-[#2D1537]" viewBox="0 0 100 20" width="100">
                 <path
                   d="M0 10 Q25 20 50 10 T100 10"
@@ -88,137 +107,115 @@ export default function Mentoring() {
                   strokeWidth="2"
                 />
               </svg>
-            </div>
-            {/* Section 2 */}
-            <div>
-              <h2 className="text-3xl font-bold text-[#2D1537] mb-4">
-                Why Become a Mentor?
-              </h2>
-              <ul className="list-disc list-inside space-y-3 text-gray-700 text-lg leading-relaxed">
-                <li>
-                  <span className="font-semibold text-[#2D1537]">
-                    Create Impact:
-                  </span>{" "}
-                  Shape careers and influence success.
-                </li>
-                <li>
-                  <span className="font-semibold text-[#2D1537]">
-                    Foster Growth:
-                  </span>{" "}
-                  Learn and grow alongside your mentees.
-                </li>
-                <li>
-                  <span className="font-semibold text-[#2D1537]">
-                    Build Connections:
-                  </span>{" "}
-                  Expand your professional network with lasting relationships.
-                </li>
-                <li>
-                  <span className="font-semibold text-[#2D1537]">
-                    Enhance Skills:
-                  </span>{" "}
-                  Develop leadership and communication prowess.
-                </li>
-                <li>
-                  <span className="font-semibold text-[#2D1537]">
-                    Leave a Legacy:
-                  </span>{" "}
-                  Inspire future leaders and make a difference.
-                </li>
-              </ul>
-            </div>
+             </div>
 
-            {/* Section 3 */}
-            <div>
-              <h2 className="text-3xl font-bold text-[#2D1537] mb-4">
-                The Mentoring Process
+            {/* Content Sections */}
+            <section className="space-y-12">
+              {/* Section 1 */}
+              <div>
+                <h2 className="text-3xl font-bold text-[#2D1537] mb-4">
+                  Introduction to Mentoring
+                </h2>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  At <span className="font-semibold text-[#2D1537]">Lupleg</span>,
+                  mentoring is the cornerstone of growth and innovation. It bridges
+                  the gap between experience and ambition, creating a path for
+                  meaningful collaboration. By being a mentor, you empower others
+                  while enriching your own journey with fresh perspectives and
+                  mutual respect.
+                </p>
+              </div>
+
+              {/* Section 2 */}
+              <div>
+                <h2 className="text-3xl font-bold text-[#2D1537] mb-4">
+                  Why Become a Mentor?
+                </h2>
+                <ul className="list-disc list-inside space-y-3 text-gray-700 text-lg leading-relaxed">
+                  <li>
+                    <span className="font-semibold text-[#2D1537]">
+                      Create Impact:
+                    </span>{" "}
+                    Shape careers and influence success.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-[#2D1537]">
+                      Foster Growth:
+                    </span>{" "}
+                    Learn and grow alongside your mentees.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-[#2D1537]">
+                      Build Connections:
+                    </span>{" "}
+                    Expand your professional network with lasting relationships.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-[#2D1537]">
+                      Enhance Skills:
+                    </span>{" "}
+                    Develop leadership and communication prowess.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-[#2D1537]">
+                      Leave a Legacy:
+                    </span>{" "}
+                    Inspire future leaders and make a difference.
+                  </li>
+                </ul>
+              </div>
+
+              {/* Section 3 */}
+              <div>
+                <h2 className="text-3xl font-bold text-[#2D1537] mb-4">
+                  The Mentoring Process
+                </h2>
+                <ul className="list-decimal list-inside space-y-3 mt-4 text-gray-700 text-lg leading-relaxed">
+                  <li>
+                    <span className="font-semibold">Foster Trust:</span> Build a
+                    foundation of openness and reliability.
+                  </li>
+                  <li>
+                    <span className="font-semibold">Set Goals:</span> Define
+                    clear, actionable outcomes.
+                  </li>
+                  <li>
+                    <span className="font-semibold">Provide Guidance:</span> Offer
+                    insights and encourage growth.
+                  </li>
+                  <li>
+                    <span className="font-semibold">Celebrate Wins:</span>{" "}
+                    Recognize progress and successes.
+                  </li>
+                  <li>
+                    <span className="font-semibold">Encourage Independence:</span>{" "}
+                    Empower mentees to take charge of their growth.
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            {/* Call to Action */}
+            <div className="mt-12 text-center bg-[#f9f5fc] p-10 rounded-lg shadow-md">
+              <h2 className="text-4xl font-bold text-[#2D1537] mb-4">
+                Ready to Make a Difference?
               </h2>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Mentoring is more than just advice; it’s a structured, impactful
-                process:
+              <p className="text-lg text-gray-700 mb-6">
+                Join our community of mentors and mentees and start creating a
+                lasting impact today.
               </p>
-              <ul className="list-decimal list-inside space-y-3 mt-4 text-gray-700 text-lg leading-relaxed">
-                <li>
-                  <span className="font-semibold">Foster Trust:</span> Build a
-                  foundation of openness and reliability.
-                </li>
-                <li>
-                  <span className="font-semibold">Set Goals:</span> Define
-                  clear, actionable outcomes.
-                </li>
-                <li>
-                  <span className="font-semibold">Provide Guidance:</span> Offer
-                  insights and encourage growth.
-                </li>
-                <li>
-                  <span className="font-semibold">Celebrate Wins:</span>{" "}
-                  Recognize progress and successes.
-                </li>
-                <li>
-                  <span className="font-semibold">Encourage Independence:</span>{" "}
-                  Empower mentees to take charge of their growth.
-                </li>
-              </ul>
-            </div>
-
-            {/* Section 4 */}
-            <div>
-              <h2 className="text-3xl font-bold text-[#2D1537] mb-4">
-                Types of Mentoring
-              </h2>
-              <ul className="space-y-4 text-gray-700 text-lg leading-relaxed">
-                <li className="flex items-center space-x-4">
-                  <FaUserTie className="text-[#2D1537] h-6 w-6" />
-                  <span>
-                    <span className="font-semibold">One-on-One Mentoring:</span>{" "}
-                    Individualized, focused guidance.
-                  </span>
-                </li>
-                <li className="flex items-center space-x-4">
-                  <FaUsers className="text-[#2D1537] h-6 w-6" />
-                  <span>
-                    <span className="font-semibold">Group Mentoring:</span>{" "}
-                    Collaborative sessions with multiple mentees.
-                  </span>
-                </li>
-                <li className="flex items-center space-x-4">
-                  <FaRegLightbulb className="text-[#2D1537] h-6 w-6" />
-                  <span>
-                    <span className="font-semibold">Reverse Mentoring:</span>{" "}
-                    Gain insights from junior professionals.
-                  </span>
-                </li>
-                <li className="flex items-center space-x-4">
-                  <FaLaptop className="text-[#2D1537] h-6 w-6" />
-                  <span>
-                    <span className="font-semibold">Virtual Mentoring:</span>{" "}
-                    Connect and guide remotely using digital tools.
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          {/* Call to Action */}
-          <div className="mt-16 text-center bg-[#f9f5fc] p-10 rounded-lg shadow-md">
-            <h2 className="text-4xl font-bold text-[#2D1537] mb-4">
-              Ready to Make a Difference?
-            </h2>
-            <p className="text-lg text-gray-700 mb-6">
-              Join our community of mentors and mentees and start creating a
-              lasting impact today.
-            </p>
-            <div className="flex justify-center space-x-4">
-              <Link
-                href="/contact"
-                className="bg-[#2D1537] text-white py-3 px-6 rounded-lg text-lg font-medium shadow hover:bg-[#4b3160] transition duration-200"
-              >
-                Become a Mentor
-              </Link>
+              <div className="flex justify-center">
+                <Link
+                  href="/contact"
+                  className="bg-[#2D1537] text-white py-3 px-6 rounded-lg text-lg font-medium shadow hover:bg-[#4b3160] transition duration-200"
+                >
+                  Become a Mentor
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
   );
 }
