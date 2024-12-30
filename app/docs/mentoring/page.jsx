@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { IoHome } from "react-icons/io5";
-import { FaUserTie, FaUsers, FaRegLightbulb, FaLaptop } from "react-icons/fa";
 
 export default function Mentoring() {
   return (
