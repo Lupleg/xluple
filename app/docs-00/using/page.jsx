@@ -56,37 +56,60 @@ export default function Using() {
         {/* Sidebar */}
         <aside className="w-64 border-r p-4 hidden md:block">
           <nav className="space-y-4">
+            <div className="font-semibold text-purple-600">Using Lupleg</div>
             <div className="space-y-2">
-            <Link
-                href="/docs/using"
-                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
-              >
-                Using Lupleg
-              </Link>
+              <Button variant="ghost" className="w-full justify-between">
+                Settings and options
+                <ChevronDown className="h-4 w-4" />
+              </Button>
+              <Button variant="ghost" className="w-full justify-between">
+                Getting Feedback
+                <ChevronDown className="h-4 w-4" />
+              </Button>
+              <Button variant="ghost" className="w-full justify-between">
+                Solving exercises
+                <ChevronDown className="h-4 w-4" />
+              </Button>
+              <Button variant="ghost" className="w-full justify-between">
+                Legal Information
+                <ChevronDown className="h-4 w-4" />
+              </Button>
               <Link
-                href="/docs/using"
+                href="/contact"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Contact Us
               </Link>
               <Link
-                href="/docs/using"
+                href="/report-abuse"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Report Abuse
               </Link>
               <Link
-                href="/docs/using"
+                href="/getting-started"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Getting Started
               </Link>
               <Link
-                href="/docs/using/faq"
+                href="/faq"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Frequently asked questions
               </Link>
+              <Button variant="ghost" className="w-full justify-between">
+                Licenses used on Lupleg
+                <ChevronDown className="h-4 w-4" />
+              </Button>
+              <Button variant="ghost" className="w-full justify-between">
+                The Various editions of Lupleg
+                <ChevronDown className="h-4 w-4" />
+              </Button>
+              <Button variant="ghost" className="w-full justify-between">
+                Product
+                <ChevronDown className="h-4 w-4" />
+              </Button>
             </div>
           </nav>
         </aside>

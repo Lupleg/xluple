@@ -1,59 +1,13 @@
 import Link from "next/link";
 import { Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { IoDocuments, IoHome } from "react-icons/io5";
+import { IoDocuments } from "react-icons/io5";
 
 import Image from "next/image";
-import Section from "./section";
 
-export default function Docs() {
+export default function Section() {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Top Navigation */}
-      <nav className="border-b sticky top-0 bg-white z-10">
-        <div className="container mx-auto px-4 overflow-x-auto">
-          <div className="flex items-center h-16 space-x-8 whitespace-nowrap">
-            <Link
-              href="/docs"
-              className="text-[#2D1537] hover:text-[#2D1537] flex-shrink-0"
-            >
-              {/* <Home className="h-5 w-5" /> */}
-              <IoHome className="h-5 w-5" />
-            </Link>
-            <Link
-              href="/docs/using"
-              className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
-            >
-              Using Lupleg
-            </Link>
-            <Link
-              href="/docs/building"
-              className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
-            >
-              Building Lupleg
-            </Link>
-            <Link
-              href="/docs/mentoring"
-              className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
-            >
-              Mentoring
-            </Link>
-            <Link
-              href="/docs/community"
-              className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
-            >
-              Community
-            </Link>
-            <Link
-              href="/docs//tracks"
-              className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
-            >
-              Track Specific
-            </Link>
-          </div>
-        </div>
-      </nav>
-
       {/* Main Content */}
       <main className="flex-1 container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto text-center">
@@ -118,8 +72,6 @@ export default function Docs() {
             </div>
           </div>
         </div>
-
-        <Section />
       </main>
     </div>
   );
