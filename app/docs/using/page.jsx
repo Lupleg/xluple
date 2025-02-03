@@ -70,13 +70,13 @@ export default function Using() {
                 Contact Us
               </Link>
               <Link
-                href="/docs/using"
+                href="/docs/using/report-abuse"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Report Abuse
               </Link>
               <Link
-                href="/docs/using"
+                href="/docs/using/getting-started"
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Getting Started
