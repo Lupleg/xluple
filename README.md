@@ -111,8 +111,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you have any questions, suggestions, or feedback, please feel free to reach out to us:
 
-- Email: support@luplegcommunity.com
-- GitHub Issues: [FE-Lupleg Issues](https://github.com/your-username/FE-Lupleg/issues)
+- Email: support@lupleg.org
+- GitHub Issues: [FE-Lupleg Issues](https://github.com/Lupleg/FE-Lupleg/issues)
 
 Thank you for being a part of the Lupleg Community and contributing to the FE-Lupleg project!
 
