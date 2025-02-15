@@ -1,10 +1,6 @@
-# Lupleg Website
+# FE-Lupleg
 
-create for me a README file for FE-Lupleg Repository for our Lupleg Community with all informations about the project and how to use it and even how one can contribute to it.
-
-# FE-Lupleg Repository
-
-Welcome to the FE-Lupleg Repository! This repository is dedicated to the development and maintenance of the front-end for the Lupleg Community. Below you will find all the necessary information about the project, how to use it, and how you can contribute to it.
+This repository is dedicated to the development and maintenance of the front-end for the Lupleg Community. Below you will find all the necessary information about the project, how to use it, and how you can contribute to it.
 
 ## Table of Contents
 
@@ -115,8 +111,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you have any questions, suggestions, or feedback, please feel free to reach out to us:
 
-- Email: support@luplegcommunity.com
-- GitHub Issues: [FE-Lupleg Issues](https://github.com/your-username/FE-Lupleg/issues)
+- Email: support@lupleg.org
+- GitHub Issues: [FE-Lupleg Issues](https://github.com/Lupleg/FE-Lupleg/issues)
 
 Thank you for being a part of the Lupleg Community and contributing to the FE-Lupleg project!
 
