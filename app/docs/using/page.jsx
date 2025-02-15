@@ -69,6 +69,7 @@ export default function Using() {
               </Link>
               <Link
                 href="/docs/using/editions"
+
                 className="block px-4 py-2 text-gray-600 hover:text-gray-900"
               >
                 Editions
