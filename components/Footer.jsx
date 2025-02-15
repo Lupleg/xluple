@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import FooterSection from "./FooterSection";
+import { useRouter } from "next/navigation";
 
 const footerData = [
   {
@@ -15,30 +17,38 @@ const footerData = [
   {
     title: "Links",
     links: [
-      { name: "Challenge", path: "/challenges/frontend" },
+      { name: "Contributing", path: "/contributing" },
       { name: "Affiliates", path: "/affiliates" },
       { name: "Partner with Us", path: "/resources/supporting/partner" },
       { name: "Research", path: "/research" },
-      { name: "Publications", path: "/publications" },
+      { name: "Sitemap", path: "/sitemap" },
       { name: "Changelog", path: "/changelogs" },
     ],
   },
   {
-    title: "Resources",
+    title: "Sources",
     links: [
-      { name: "Web Editor", path: "https://web.lupleg.org" },
-      { name: "Sitemap", path: "/sitemap" },
-      { name: "Tips", path: "/tips" },
+      { name: "Books", path: "/resources/books" },
+      { name: "Resources", path: "/resources" },
+      { name: "30daysChallenge", path: "/30dayschallenge" },
       { name: "Projects", path: "https://projects.lupleg.org" },
+      { name: "Tips", path: "/tips" },
+      { name: "Blogs", path: "/blog" },
       { name: "Docs", path: "/docs" },
     ],
   },
 ];
 
 export default function Footer() {
+  const router = useRouter();
+
+  const handleDonate = () => {
+    router.push("https://ko-fi.com/lupleg");
+  };
   return (
     <div className="pt-28">
       <footer className="bg-[#2D1537] p-10 text-white">
+        <FooterSection />
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-10 md:grid-cols-4">
           {footerData.map((section, index) => (
             <div key={index}>
@@ -68,9 +78,9 @@ export default function Footer() {
           <div>
             <h5 className="mb-4 font-bold">Support us</h5>
             <div className="mt-8">
-              <Button className="bg-[#F3A833] hover:bg-[#F3A833]">
+              <Button onClick={handleDonate} className="bg-[#F3A833] hover:bg-[#F3A833]">
                 <DonateIcon className="mr-2" />
-                Donate
+                Donate 
               </Button>
             </div>
             <div className="pt-5">
@@ -79,7 +89,7 @@ export default function Footer() {
                   Careers
                 </Link>
                 <span className="relative flex h-4 w-4">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#2D1537] opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-4 w-4 bg-green-500"></span>
                 </span>
               </Button>

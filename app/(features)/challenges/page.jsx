@@ -2,17 +2,17 @@ import MoreFQA from "@/components/FeaturesCards/MoreFAQ";
 import Link from "next/link";
 import React from "react";
 
-function Challenges() {
+export default function Challenges() {
   return (
     <div>
       <div className="min-h-screen flex flex-col items-center mt-10">
         <h1 className="text-3xl md:text-5xl font-bold text-black drop-shadow-lg text-center max-w-3xl">
           Challenges you can solve to
-          <span className="text-green-900"> improve </span>your
-          <span className="text-green-900"> coding </span>skills!
+          <span className="text-[#2D1537]"> improve </span>your
+          <span className="text-[#2D1537]"> coding </span>skills!
         </h1>
         <div className="relative my-16 text-center z-20">
-          <p className="text-green-950 text-lg mt-4 mb-8 w-96 max-w-full">
+          <p className="text-black text-lg mt-4 mb-8 w-96 max-w-full">
             Join{" "}
             <b>
               <a className="cursor-pointer" href="/challenges/frontend">
@@ -22,10 +22,10 @@ function Challenges() {
             </b>
             supercharging their coding skills by building projects.
           </p>
-          <div className="bg-[#C24229] rounded-lg transition hover:-translate-y-1 w-max mx-auto group cursor-pointer">
-            <div className="animated-border after:opacity-100 before:opacity-100 p-0.5 rounded-lg text-green-900 flex justify-center items-center">
+          <div className="bg-[#2D1537] rounded-lg transition hover:-translate-y-1 w-max mx-auto group cursor-pointer">
+            <div className="animated-border after:opacity-100 before:opacity-100 p-0.5 rounded-lg text-[#2D1537] flex justify-center items-center">
               <Link
-                className="bg-[#C24229] text-white text-lg font-bold py-4 px-8 cursor-pointer relative w-full rounded-lg group-hover:bg-[#C24229] z-10"
+                className="bg-[#2D1537] text-white text-lg font-bold py-4 px-8 cursor-pointer relative w-full rounded-lg group-hover:bg-[#2D1537] z-10"
                 href="/challenges/frontend"
               >
                 Start coding
@@ -33,9 +33,9 @@ function Challenges() {
             </div>
           </div>
         </div>
-        <div className="bg-green-800 text-white p-4 rounded-md w-full lg:max-w-[800px]">
+        <div className="bg-[#2D1537] text-white p-4 rounded-md w-full lg:max-w-[800px]">
           <div className="relative h-96 lg:h-[450px] 2xl:h-[600px] pb-12">
-            <div className="bg-[#C24229] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-3/4 md:scale-[1.5] opacity-75 blur-3xl -z-10 w-96 h-96 rounded-full"></div>
+            <div className="bg-[#2D1537] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-3/4 md:scale-[1.5] opacity-75 blur-3xl -z-10 w-96 h-96 rounded-full"></div>
             <p className="text-lg text-center mb-4">
               <strong>Challenge</strong>
             </p>
@@ -81,14 +81,14 @@ function Challenges() {
                     }}
                   />
                 </span>
-                <span className="flex justify-center items-center absolute top-4 right-4 bg-white w-10 h-10 rounded-full text-green-800 hover:scale-105 hover:text-green-900 transition">
+                <span className="flex justify-center items-center absolute top-4 right-4 bg-[#2D1537] w-10 h-10 rounded-full text-[#2D1537] hover:scale-105 hover:text-[#2D1537] transition">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     strokeWidth="2"
-                    stroke="currentColor"
+                    stroke="white"
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -105,21 +105,21 @@ function Challenges() {
           </div>
         </div>
       </div>
-      <div className="bg-white text-green-900 flex flex-col items-center justify-center pb-24 pt-48 p-4 w-full -mt-24 md:-mt-36">
+      <div className="bg-white text-[#2D1537] flex flex-col items-center justify-center pb-24 pt-48 p-4 w-full -mt-24 md:-mt-36">
         <small className="uppercase font-bold">features</small>
         <h2 className="text-4xl text-center font-bold mt-2 text-black">
           What makes LupLeg special
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 container mt-24 mx-auto">
           <div className="text-center">
-            <span className="inline-block bg-green-200 rounded-xl p-3 mx-auto">
+            <span className="inline-block bg-[#2D1537] rounded-xl p-3 mx-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
                 viewBox="0 0 24 24"
                 strokeWidth="2"
-                stroke="currentColor"
+                stroke="white"
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -142,14 +142,14 @@ function Challenges() {
             </p>
           </div>
           <div className="text-center">
-            <span className="inline-block bg-green-200 rounded-xl p-2 mx-auto">
+            <span className="inline-block bg-[#2D1537] rounded-xl p-2 mx-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="36"
                 height="36"
                 viewBox="0 0 24 24"
                 strokeWidth="2"
-                stroke="currentColor"
+                stroke="white"
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -169,14 +169,14 @@ function Challenges() {
             </p>
           </div>
           <div className="text-center">
-            <span className="inline-block bg-green-200 rounded-xl p-3 mx-auto">
+            <span className="inline-block bg-[#2D1537] rounded-xl p-3 mx-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
                 viewBox="0 0 24 24"
                 strokeWidth="2"
-                stroke="currentColor"
+                stroke="white"
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -200,14 +200,14 @@ function Challenges() {
             </p>
           </div>
           <div className="text-center">
-            <span className="inline-block bg-green-200 rounded-xl p-3 mx-auto">
+            <span className="inline-block bg-[#2D1537] rounded-xl p-3 mx-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
                 viewBox="0 0 24 24"
                 strokeWidth="2"
-                stroke="currentColor"
+                stroke="white"
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -236,7 +236,7 @@ function Challenges() {
           Join the challenge now!
         </h2>
         <a
-          className="inline-block bg-[#C24229]  text-white text-lg font-bold rounded-lg py-4 px-8 cursor-pointer hover:opacity-80"
+          className="inline-block bg-[#2D1537] text-white text-lg font-bold rounded-lg py-4 px-8 cursor-pointer hover:opacity-80"
           href="/challenges/frontend"
         >
           Join challenge
@@ -246,5 +246,3 @@ function Challenges() {
     </div>
   );
 }
-
-export default Challenges;

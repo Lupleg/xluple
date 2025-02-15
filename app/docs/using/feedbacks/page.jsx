@@ -1,0 +1,189 @@
+import Link from "next/link";
+
+import { IoHome } from "react-icons/io5";
+
+export default function Feedback() {
+  return (
+    <div className="min-h-screen flex flex-col">
+      {/* Top Navigation */}
+      <nav className="border-b sticky top-0 bg-white z-10">
+        <div className="container mx-auto px-4 overflow-x-auto">
+          <div className="flex items-center h-16 space-x-8 whitespace-nowrap">
+            <Link
+              href="/docs"
+              className="text-gray-600 hover:text-gray-900 flex-shrink-0"
+            >
+              <IoHome className="h-5 w-5" />
+            </Link>
+            <Link
+              href="/docs/using"
+              className=" text-[#2D1537] border-b-2 border-[#2D1537] hover:text-gray-900 h-full flex items-center flex-shrink-0"
+            >
+              Using Lupleg
+            </Link>
+            <Link
+              href="/docs/building"
+              className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
+            >
+              Building Lupleg
+            </Link>
+            <Link
+              href="/docs/mentoring"
+              className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
+            >
+              Mentoring
+            </Link>
+            <Link
+              href="/docs/community"
+              className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
+            >
+              Community
+            </Link>
+            <Link
+              href="/docs/tracks"
+              className="text-gray-600 hover:text-gray-900 h-full flex items-center flex-shrink-0"
+            >
+              Track Specific
+            </Link>
+          </div>
+        </div>
+      </nav>
+
+      <div className="flex-1 flex pt-16">
+        {" "}
+        {/* Add pt-16 here */}
+        {/* Sidebar */}
+        <aside className="w-64 border-r p-4 hidden md:block">
+          <nav className="space-y-4">
+            <div className="space-y-2">
+              <Link
+                href="/docs/using"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
+                Using
+              </Link>
+              <Link
+                href="/docs/using/abuse"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
+                Abuse
+              </Link>
+              <Link
+                href="/docs/using/editions"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
+                Editions
+              </Link>
+              <Link
+                href="/docs/using/legal"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
+                Legal
+              </Link>
+              <Link
+                href="/docs/using/feedbacks"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
+                Feedbacks
+              </Link>
+              <Link
+                href="/docs/using/licenses"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
+                Licenses
+              </Link>
+
+              <Link
+                href="/docs/using/options"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
+                Options
+              </Link>
+
+              <Link
+                href="/docs/using/solving"
+                className="block px-4 py-2 text-gray-600 hover:text-gray-900"
+              >
+                Solving
+              </Link>
+            </div>
+          </nav>
+        </aside>
+        {/* Main Content */}
+        <main className="flex-1 p-8">
+          <div className="max-w-4xl">
+            <h1 className="text-4xl font-bold text-[#2D1537] mb-4">
+              Getting feedbacks
+            </h1>
+            <p className="text-xl text-gray-600 mb-8">
+              Learn how you can get feedback to help you improve your code.
+            </p>
+
+            {/* Decorative Wave */}
+            <div className="mb-8">
+              <svg className="text-[#2D1537]" viewBox="0 0 100 20" width="100">
+                <path
+                  d="M0 10 Q25 20 50 10 T100 10"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                />
+              </svg>
+            </div>
+
+            <p className="text-gray-700 mb-8">
+              There are three types of feedback you can get on a solution:
+            </p>
+
+            <ul className="list-disc list-inside text-gray-700 mb-8">
+              <li>Automated feedback</li>
+              <li>Peer feedback</li>
+              <li>Mentor feedback</li>
+            </ul>
+
+            <p className="text-gray-700 mb-8">
+              Automated feedback is generated by the system when you submit a
+              solution. It checks your solution against the test cases and
+              provides you with a score and feedback based on the results.
+            </p>
+
+            <p className="text-gray-700 mb-8">
+              Peer feedback is feedback provided by other learners on the
+              platform. You can view and provide feedback on other learners'
+              solutions.
+            </p>
+
+            <p className="text-gray-700 mb-8">
+              Mentor feedback is feedback provided by mentors. Mentors are
+              experienced developers who can provide you with feedback on your
+              solution.
+            </p>
+
+            <p className="text-gray-700 mb-8">
+              To get feedback on your solution, you can submit it for review.
+              You can also view feedback on your past solutions by visiting the
+              "My Submissions" page.
+            </p>
+
+            <p className="text-gray-700 mb-8">
+              Getting feedback is an important part of the learning process. It
+              helps you identify areas where you can improve and learn from your
+              mistakes.
+            </p>
+
+            <p className="text-gray-700 mb-8">
+              If you have any questions about the feedback you receive, you can
+              reach out to mentors or other learners for help.
+            </p>
+
+            <p className="text-gray-700 mb-8">
+              Feedback is a valuable resource that can help you grow as a
+              developer. Make sure to take advantage of it and use it to improve
+              your skills.
+            </p>
+          </div>
+        </main>
+      </div>
+    </div>
+  );
+}

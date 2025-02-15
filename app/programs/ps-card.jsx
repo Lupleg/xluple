@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 
-// bg-[#13132B]
 export default function PsCard() {
   return (
     <div className="min-h-screen  text-white p-4 sm:p-6 md:p-8 flex flex-col items-center">
@@ -20,17 +19,15 @@ export default function PsCard() {
               <div>
                 <div className="flex flex-col sm:flex-row items-center sm:items-start mb-2">
                   <h2 className="text-xl sm:text-2xl text-white font-bold mb-2 sm:mb-0 sm:mr-3 text-center sm:text-left">
-                    Software Engineering Essentials
+                    Software Engineering
                   </h2>
-                  {/* <span className="bg-[#F3A833] text-black text-xs font-bold px-2 py-1 rounded">
-                  </span> */}
                 </div>
                 <p className="text-[#F3A833] text-sm mb-3 text-center sm:text-left">
                   6 Months Program
                 </p>
                 <p className="text-sm text-white mb-4 text-center sm:text-left">
                   A complete practical course to become a software developer.
-                  From learning basic programming to building softwares. 
+                  From learning basic programming to building softwares.
                 </p>
                 <div className="flex justify-center sm:justify-start">
                   <Link href="/programs/se">
@@ -57,7 +54,7 @@ export default function PsCard() {
               <div>
                 <div className="flex flex-col sm:flex-row items-center sm:items-start mb-2">
                   <h2 className="text-xl sm:text-2xl text-white font-bold mb-2 sm:mb-0 sm:mr-3 text-center sm:text-left">
-                    TypeScript Pro Essentials
+                    TypeScript Pro
                   </h2>
                   <span className="bg-[#F3A833] text-black text-xs font-bold px-2 py-1 rounded">
                     Coming soon
@@ -95,7 +92,7 @@ export default function PsCard() {
               <div>
                 <div className="flex flex-col sm:flex-row items-center sm:items-start mb-2">
                   <h2 className="text-xl sm:text-2xl text-white font-bold mb-2 sm:mb-0 sm:mr-3 text-center sm:text-left">
-                    Python Pro Essentials
+                    Python Pro
                   </h2>
                   <span className="bg-[#F3A833] text-black text-xs font-bold px-2 py-1 rounded">
                     Coming soon
@@ -162,3 +159,5 @@ export default function PsCard() {
     </div>
   );
 }
+
+      

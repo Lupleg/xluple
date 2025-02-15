@@ -1,12 +1,7 @@
-// import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
-
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
-
-// const inter = Inter({ subsets: ["latin"] });
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,16 +9,15 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Building Africa's Tech Future",
+  title: "Innovation for a Sustainable Future - Mark Sikaundi",
   description:
-    "Join us in shaping the future of technology in Africa! Our developer community empowers Africans with the skills and resources to solve problems, drive innovation, and create a more sustainable future.",
+    "Join us in shaping the future of technology! Our developer community empowers individuals with the skills, resources, and support needed to tackle challenges, drive innovation, and build a more sustainable future.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        {/* <Header /> */}
         <Nav />
         {children}
         <Footer />
